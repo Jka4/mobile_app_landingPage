@@ -1,4 +1,5 @@
 .idea
+node_modules
 references
 .DS_Store
 yarn.lock
