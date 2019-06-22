@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "LatoRegular";
+    src: url("/fonts/lato/LatoRegular.eot");
+    src: url("/fonts/lato/LatoRegular.eot?#iefix")format("embedded-opentype"),
+        url("/fonts/lato/LatoRegular.woff") format("woff"),
+        url("/fonts/Lato/LatoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
 @mixin lato_blue_Bold($font-size, $margin-top) {
     font-family: Lato;
     font-style: normal;
