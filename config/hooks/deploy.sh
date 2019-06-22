@@ -1,9 +1,7 @@
-#!/usr/bin/env bash
+git add .
+git commit -m 'Solution'
+git push origin fe_mar19_vova
 
-cp -R backstop_data/ src/report
 git add src/
-git commit -m "deploy static content"
+git commit -m "solution"
 git subtree push --prefix src origin gh-pages
-./node_modules/.bin/rimraf src/report
-git add src/
-git commit -m "removed report after deploy"
