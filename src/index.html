@@ -41,16 +41,25 @@
 
     <div class="sampleBlock">
 
-      <img class="suk" src="images/secondContainer_background_suk.png" alt="">
       <img class="solo" src="images/secondContainer_background.png" alt="">
       <img class="solo_mobile" src="images/secondContainer_background__mobile.png" alt="">
 
-      <div class="sample1">
-        <img src="images/SAMPLE01.png" alt="">
+      <div class="suka">
+        <div class="sample1">
+          <img src="images/SAMPLE01.png" alt="">
+        </div>
+        <div class="sample2">
+          <img src="images/SAMPLE02.png" alt="">
+        </div>
       </div>
-      <div class="sample2">
-        <img src="images/SAMPLE02.png" alt="">
+
+
+      <div class="sample">
+        <img id="uno" src="images/SAMPLE01.png" alt="">
+
+        <img id="dos" src="images/SAMPLE02.png" alt="">
       </div>
+
 
 
     </div>
@@ -345,9 +354,9 @@
       startAt: 0,
       type: 'carousel',
       perView: 3,
-      // autoplay: 2000,
+      autoplay: 2000,
       hoverpause: true,
-      animationDuration: 800,
+      animationDuration: 1100,
       peek: { before: 150, after: 150 },
       gap: 36,
     }).mount();
