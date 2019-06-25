@@ -112,12 +112,8 @@ body {
   background: #fff;
 }
 
-.suk {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  z-index: 2;
+.sample {
+  display: none;
 }
 
 .solo_mobile {

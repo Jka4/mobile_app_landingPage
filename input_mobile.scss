@@ -89,9 +89,9 @@
         background: #fff;
     }
 
-    .suk {
-        display: none;
-    }
+    // .suk {
+    //     display: none;
+    // }
 
     .sampleBlock {
         order: 2;
@@ -107,7 +107,7 @@
 
         .solo_mobile {
             display: block;
-            height: 100vh - 30;
+            height: 98vw;
             width: 100vw;
             margin: 0;
         }
@@ -115,27 +115,41 @@
     }
 
     .suka {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 290px;
-        width: 100vw;
+        display: none;
     }
 
-    .sample1 {
-        top: 540px;
-        left: -14vw;
+    .sample {
+        display: block;
+        position: absolute;
         margin: 0 auto;
-        z-index: 20;
-        transform: scale(0.8);
+
+
+        #uno {
+            margin-top: 80px;
+            right: 7vw;
+            width: 70vw;
+            z-index: 5;
+            position: relative;
+            margin-bottom: -50px;
+
+            box-shadow: -15.1278px 16.3884px 33.6173px rgba(0, 0, 0, 0.5);
+            border-radius: 2.74531px;
+
+        }
+
+        #dos {
+            width: 70vw;
+            left: 7vw;
+            z-index: 3;
+            position: absolute;
+            margin-bottom: 30px;
+
+            box-shadow: -15.1278px 16.3884px 33.6173px rgba(0, 0, 0, 0.5);
+            border-radius: 2.74531px;
+        }
     }
 
-    .sample2 {
-        top: 690px;
-        left: 8vw;
-        z-index: 19;
-        transform: scale(0.75);
-    }
+
 
     .secondContainer__rightBlock {
         display: flex;
@@ -176,18 +190,20 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        background: white;
+
 
         .thirdBlock__right_mobile {
             margin: 0 auto;
             margin-top: 5px;
             width: 100vw;
-            height: 590px;
+            height: 100vw + 63.25vw;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: no-repeat url(images/thirdBlock_background_mobile.png) 50% 50%;
-            background-size: 99%;
+            background: no-repeat url(images/thirdBlock_background_mobile_1.png) 50% 20%;
+            background-size: 100%;
         }
 
         .thirdBlock__left_block {
@@ -197,6 +213,7 @@
             align-items: center;
             height: 460px;
             margin-left: 0;
+
 
             .thirdBlock__left_block__Pre_title {
                 @include lato_blue_Bold(16px, 62px);
