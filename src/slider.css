@@ -208,7 +208,7 @@ ul {
 }
 
 .slider__arrow:hover {
-    background-color: rgba(255, 255, 255, 0.733);
+    background-color: #FFFFFF;
     border: 2.5px solid rgba(0, 174, 238, 0.747);
 
 }
