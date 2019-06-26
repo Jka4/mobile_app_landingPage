@@ -1,0 +1,375 @@
+@font-face {
+    font-family: "LatoRegular";
+    src: url("/fonts/lato/LatoRegular.eot");
+    src: url("/fonts/lato/LatoRegular.eot?#iefix")format("embedded-opentype"),
+        url("/fonts/lato/LatoRegular.woff") format("woff"),
+        url("/fonts/Lato/LatoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+@mixin lato_blue_Bold($font-size, $margin-top) {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $font-size;
+    color: #00adee;
+    margin-top: $margin-top;
+    line-height: 21px;
+}
+
+@mixin lato_Bold_title($font-size, $margin-top) {
+    color: #333;
+    font-family: Lato;
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 37px;
+    margin-top: $margin-top;
+}
+
+@mixin lato_text($font-size, $margin-top) {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $font-size;
+    line-height: 23px;
+    color: #4f4f4f;
+    margin-top: $margin-top;
+    vertical-align: top;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.firstContainer {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 1440px;
+    height: 665px;
+    background: url(images/Frame_phones.png) no-repeat 100% 50%;
+    background-color: #f4f6f9;
+}
+
+.left_side_of_firstContainer {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    z-index: 5;
+    margin-left: 11.31%;
+
+    .logo {
+        img {
+            margin-top: 9.17%;
+            cursor: pointer;
+        }
+    }
+
+
+    .title {
+
+        @include lato_Bold_title(36px, 20%);
+        width: 546px;
+        height: 96px;
+    }
+
+    .text {
+
+        @include lato_text (18px, 4.51%);
+        width: 453px;
+        height: 52px;
+    }
+
+    .downloadLink {
+        display: flex;
+        flex-direction: row;
+        margin-top: 7.51%;
+
+        .IOS {
+            cursor: pointer;
+        }
+
+        .android {
+            cursor: pointer;
+            margin-left: 7.51%;
+        }
+    }
+}
+
+.secondContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 auto;
+    width: 1440px;
+    height: 590px;
+    background: #fff;
+}
+
+.sample {
+    display: none;
+}
+
+.solo_mobile {
+    display: none;
+}
+
+.sampleBlock {
+    display: flex;
+}
+
+.sample1 {
+    position: absolute;
+    left: 109px;
+    top: 74px;
+    z-index: 20;
+}
+
+.sample2 {
+    position: absolute;
+    top: 296px;
+    left: 270px;
+    z-index: 19;
+}
+
+.secondContainer__rightBlock {
+    display: flex;
+    flex-direction: column;
+    // margin-left: 180px;
+
+    .secondContainer__rightBlock_pre_title {
+        @include lato_blue_Bold(16px, 133px);
+    }
+
+    .secondContainer__rightBlock_title {
+        @include lato_Bold_title(28px, 27px);
+    }
+
+    .secondContainer__rightBlock_text {
+        @include lato_text(16px, 27px);
+        width: 407px;
+        height: 185px;
+    }
+
+    .secondContainer__rightBlock_more {
+        @include lato_blue_Bold(16px, 22px);
+        cursor: pointer;
+    }
+}
+
+.thirdBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 auto;
+    height: 716px;
+    width: 1440px;
+    background: url(images/thirdBlock_background.png) no-repeat 100% 50%;
+}
+
+.thirdBlock__right_mobile {
+    display: none;
+}
+
+.thirdBlock__left_block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 162px;
+
+    .thirdBlock__left_block__Pre_title {
+        @include lato_blue_Bold(16px, 217px);
+    }
+
+    .thirdBlock__left_block__title {
+        @include lato_Bold_title(28px, 27px);
+    }
+
+    .thirdBlock__left_block__text {
+        @include lato_text(16px, 27px);
+        width: 480px;
+        height: 139px;
+    }
+
+    .thirdBlock__left_block__more {
+        @include lato_blue_Bold(16px, 54px);
+        cursor: pointer;
+    }
+}
+
+.fourthBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 755px;
+    width: 1440px;
+    margin: 0 auto;
+    background: #00adee;
+}
+
+.fourthBlock_title {
+    @include lato_Bold_title(28px, 76px);
+    color: #fff;
+}
+
+.fourthBlock_features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .fourthBlock_features__element {
+        display: flex;
+        flex-direction: column;
+        width: 311px;
+        height: auto;
+        margin-left: 86px;
+        margin-top: 50px;
+    }
+
+    .element_image__title {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        color: #fff;
+        margin-top: 16px;
+    }
+}
+
+// СЛАЙДЕР
+.fifthBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 1440px;
+    height: 431px;
+    font-size: 44px;
+    background: white;
+
+    .fifthBlock__title {
+        @include lato_Bold_title(28px, 0);
+        margin-bottom: 40px;
+
+    }
+}
+
+.sixthBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1440px;
+    height: 278px;
+    background: #fafafa;
+
+    .sixthBlock__ttitle {
+        @include lato_Bold_title(28px, 57px);
+        margin: 0 auto;
+
+    }
+}
+
+.sixthBlock__featuredUnits {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    img {
+        margin-left: 10px;
+    }
+}
+
+.seventhBlock {
+    width: 1440px;
+    height: 482px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    background: url(images/pre_footer_image.png) no-repeat 0% 10%;
+}
+
+.seventhBlock__content {
+    margin-left: 540px;
+
+    .seventhBlock__content_title {
+        @include lato_Bold_title(28px, 105px);
+    }
+
+    .seventhBlock__content_text {
+        @include lato_text(16px, 35px);
+        width: 535px;
+        height: 125px;
+    }
+
+    .downloadLink_footer {
+        display: flex;
+        flex-direction: row;
+        margin-top: 7.51%;
+
+        .IOS_footer {
+            cursor: pointer;
+        }
+
+        .android_footer {
+            cursor: pointer;
+            margin-left: 7.51%;
+        }
+    }
+}
+
+footer {
+    width: 1440px;
+    height: 127px;
+    background: #00adee;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .logos {
+        cursor: pointer;
+        outline: none;
+        margin-left: 163px;
+
+    }
+
+    .linkBlok {
+        display: flex;
+
+        a {
+            @include lato_Bold_title (16px, 0);
+            margin-left: 26px;
+            color: #fff;
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    .socialsBlock {
+        margin-right: 161px;
+
+        img {
+            margin-right: 17px;
+            cursor: pointer;
+        }
+    }
+}

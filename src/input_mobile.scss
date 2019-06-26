@@ -1,0 +1,449 @@
+////// MOBILE ////// Mobil ////// MOBILE /////
+@mixin lato_blue_Bold($font-size, $margin-top) {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $font-size;
+    color: #00adee;
+    margin-top: $margin-top;
+    line-height: 21px;
+}
+
+@mixin lato_Bold_title($font-size, $margin-top) {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $font-size;
+    color: #333;
+    margin-top: $margin-top;
+    line-height: 37px;
+}
+
+@mixin lato_text($font-size, $margin-top) {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $font-size;
+    line-height: 23px;
+    color: #4f4f4f;
+    margin-top: $margin-top;
+    vertical-align: top;
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+
+    .firstContainer {
+        width: auto;
+        height: 530px;
+        justify-content: center;
+        align-items: center;
+        background: #f4f6f9;
+    }
+
+    .left_side_of_firstContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 5;
+        margin-left: 0;
+
+        .logo {
+            img {
+                display: flex;
+                margin: 0 auto;
+            }
+        }
+
+        .title {
+            @include lato_Bold_title (30px, 80px);
+            width: 320px;
+            height: 119px;
+            text-align: center;
+
+        }
+
+        .text {
+            @include lato_text(16px, 30px);
+            width: 320px;
+            height: 70px;
+        }
+
+        .downloadLink {
+            justify-content: space-around;
+
+            .android {
+                cursor: pointer;
+                margin-left: 5vw;
+            }
+        }
+    }
+
+    .secondContainer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+        background: #fff;
+    }
+
+    // .suk {
+    //     display: none;
+    // }
+
+    .sampleBlock {
+        order: 2;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        .solo {
+            display: none;
+        }
+
+        .solo_mobile {
+            display: block;
+            height: 98vw;
+            width: 100vw;
+            margin: 0;
+        }
+
+    }
+
+    .suka {
+        display: none;
+    }
+
+    .sample {
+        display: block;
+        position: absolute;
+        margin: 0 auto;
+
+
+        #uno {
+            margin-top: 80px;
+            right: 7vw;
+            width: 70vw;
+            z-index: 5;
+            position: relative;
+            margin-bottom: -50px;
+
+            box-shadow: -15.1278px 16.3884px 33.6173px rgba(0, 0, 0, 0.5);
+            border-radius: 2.74531px;
+
+        }
+
+        #dos {
+            width: 70vw;
+            left: 7vw;
+            z-index: 3;
+            position: absolute;
+            margin-bottom: 30px;
+
+            box-shadow: -15.1278px 16.3884px 33.6173px rgba(0, 0, 0, 0.5);
+            border-radius: 2.74531px;
+        }
+    }
+
+
+
+    .secondContainer__rightBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .secondContainer__rightBlock_pre_title {
+            @include lato_blue_Bold(16px, 54px);
+        }
+
+        .secondContainer__rightBlock_title {
+            @include lato_Bold_title(28px, 27px);
+            width: 320px;
+            height: 74px;
+            text-align: center;
+        }
+
+        .secondContainer__rightBlock_text {
+            @include lato_text(16px, 20px);
+            width: 320px;
+            height: 208px;
+            text-align: center;
+
+        }
+
+        .secondContainer__rightBlock_more {
+            @include lato_blue_Bold(16px, 22px);
+            cursor: pointer;
+        }
+    }
+
+    .thirdBlock {
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+        background: none;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background: white;
+
+
+        .thirdBlock__right_mobile {
+            margin: 0 auto;
+            margin-top: 5px;
+            width: 100vw;
+            height: 100vw + 63.25vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: no-repeat url(images/thirdBlock_background_mobile_1.png) 50% 20%;
+            background-size: 100%;
+        }
+
+        .thirdBlock__left_block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 460px;
+            margin-left: 0;
+
+
+            .thirdBlock__left_block__Pre_title {
+                @include lato_blue_Bold(16px, 62px);
+            }
+
+            .thirdBlock__left_block__title {
+                @include lato_Bold_title(28px, 27px);
+            }
+
+            .thirdBlock__left_block__text {
+                @include lato_text(16px, 27px);
+                width: 320px;
+                height: 208px;
+                text-align: center;
+            }
+
+            .thirdBlock__left_block__more {
+                @include lato_blue_Bold(16px, 54px);
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .fourthBlock {
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+        padding-bottom: 70px;
+        justify-content: center;
+        background: #fafafa;
+
+        .fourthBlock_title {
+            @include lato_Bold_title(28px, 42px);
+            color: #333;
+            width: 318px;
+            height: 74px;
+            text-align: center;
+
+        }
+
+        .fourthBlock_features {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .fourthBlock_features__element {
+                display: flex;
+                flex-direction: column;
+                width: 311px;
+                height: auto;
+                margin-top: 50px;
+                margin-left: 0;
+            }
+
+            .element_image {
+                margin: 0 auto;
+                filter: invert(48%) sepia(13%) saturate(5207%) hue-rotate(182deg) brightness(99%) contrast(90%);
+            }
+
+            .element_image__title {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 23px;
+                color: #4f4f4f;
+                margin-top: 16px;
+                text-align: center;
+
+                li {
+                    list-style-type: none;
+                }
+
+            }
+        }
+
+    }
+
+    .fifthBlock {
+        margin: 0 auto;
+        width: auto;
+        height: 431px;
+        font-size: 44px;
+
+    }
+
+    .sixthBlock {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .sixthBlock__ttitle {
+            @include lato_Bold_title(28px, 57px);
+            padding-top: 57px;
+            margin: 0 auto;
+        }
+    }
+
+    .sixthBlock__featuredUnits {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 70px;
+        width: 92%;
+
+        img {
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+    }
+
+    .seventhBlock {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        order: 1;
+        background: none;
+    }
+
+    .seventhBlock__content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px;
+        margin-left: 0;
+        height: 385px;
+
+        .seventhBlock__content_title {
+            @include lato_Bold_title(28px, 29px);
+            margin: 0 auto;
+            width: 320px;
+            height: 74px;
+            text-align: center;
+        }
+
+        .seventhBlock__content_text {
+            @include lato_text(16px, 15px);
+            margin: 0 auto;
+            margin-top: 15px;
+            width: 80%;
+            height: 200px;
+            text-align: center;
+        }
+
+        .downloadLink_footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+
+            .IOS_footer {
+                cursor: pointer;
+            }
+
+            .android_footer {
+                cursor: pointer;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .seventhBlock__left_mobile {
+        height: 35vh;
+        margin: 0 auto;
+        width: 100vw;
+        order: 5;
+        background: no-repeat url(images/pre_footer_image__mobile.png) 60% 50%;
+        background-size: 99%;
+    }
+
+    footer {
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+
+        .logos {
+            cursor: pointer;
+            outline: none;
+            margin: 0 auto;
+            margin-top: 40px;
+            margin-left: 20px;
+            order: 1;
+        }
+
+        .linkBlok {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            width: 100%;
+            order: 3;
+            margin-bottom: 45px;
+            margin-top: 30px;
+
+            a {
+                @include lato_Bold_title (16px, 0);
+                color: #fff;
+                outline: none;
+                text-decoration: none;
+                cursor: pointer;
+                margin-left: 20px;
+            }
+        }
+
+        .socialsBlock {
+            order: 2;
+            margin-left: 20px;
+            margin-right: 0;
+            margin-top: 15px;
+
+            img {
+                margin-right: 17px;
+                cursor: pointer;
+            }
+        }
+    }
+}
