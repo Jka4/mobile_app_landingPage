@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mob App</title>
-  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="input.css">
   <link rel="stylesheet" href="input_mobile.css">
   <link rel="stylesheet" href="slider.css">
   <link rel="stylesheet" href="glide/dist/css/glide.core.min.css">
@@ -18,19 +18,19 @@
   <container class="firstContainer">
 
     <div class="left_side_of_firstContainer">
-      <div class="logo">
+      <a href="https://jka4.github.io/mobile_app_landingPage/" class="logo">
         <img src="images/LOGO.png" alt="">
-      </div>
-      <div class="title">Get a personalized football experience tailored just for you</div>
-      <div class="text">Achieve super-fan status by getting tailored updates and up-to-the-minute information on
-        your team.</div>
+      </a>
+      <h1>Get a personalized football experience tailored just for you</h1>
+      <p class="text">Achieve super-fan status by getting tailored updates and up-to-the-minute information on
+        your team.</p>
       <div class="downloadLink">
-        <div class="IOS">
+        <a href="#" class="IOS">
           <img src="images/Apple Store.png" alt="">
-        </div>
-        <div class="android">
-          <img src="images/Google Play.png" alt="">
-        </div>
+          </ф>
+          <a href="#" class="android">
+            <img src="images/Google Play.png" alt="">
+          </a>
       </div>
 
     </div>
@@ -44,9 +44,15 @@
       <img class="solo" src="images/secondContainer_background.png" alt="">
       <img class="solo_mobile" src="images/secondContainer_background__mobile.png" alt="">
 
-      <div class="suka">
+      <div class="notifications">
         <div class="sample1">
           <img src="images/SAMPLE01.png" alt="">
+
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+
         </div>
         <div class="sample2">
           <img src="images/SAMPLE02.png" alt="">
@@ -55,7 +61,7 @@
 
 
       <div class="sample">
-        <img id="uno" src="images/SAMPLE01.png" alt="">
+        <img id="uno" src="images/SAMPLE01_mob.png" alt="">
 
         <img id="dos" src="images/SAMPLE02.png" alt="">
       </div>
@@ -201,31 +207,31 @@
       <div id="intro" class="slider glide glide--ltr glide--carousel glide--swipeable">
         <div class="slider__track glide__track" data-glide-el="track">
           <ul class="slider__slides glide__slides"
-            style="transition: transform 0ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; width: 2298.5px; transform: translate3d(-320.625px, 0px, 0px);">
+            style="transition: transform 0ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; width: 1298.5px; transform: translate3d(-320.625px, 0px, 0px);">
 
 
 
-            <li class="slider__frame glide__slide" style="width: 118.25px; margin-right: 5px;">
+            <li class="slider__frame glide__slide">
               <img src="images/slider_1.png" alt="">
             </li>
 
-            <li class="slider__frame glide__slide" style="width: 118.25px; margin-left: 5px; margin-right: 5px;">
+            <li class="slider__frame glide__slide">
               <img src="images/slider_2.png" alt="">
             </li>
 
-            <li class="slider__frame glide__slide" style="width: 118.25px; margin-left: 5px; margin-right: 5px;">
+            <li class="slider__frame glide__slide">
               <img src="images/slider_3.png" alt="">
             </li>
 
-            <li class="slider__frame glide__slide" style="width: 118.25px; margin-left: 5px; margin-right: 5px;">
+            <li class="slider__frame glide__slide">
               <img src="images/slider_1.png" alt="">
             </li>
 
-            <li class="slider__frame glide__slide" style="width: 118.25px; margin-left: 5px; margin-right: 5px;">
+            <li class="slider__frame glide__slide">
               <img src="images/slider_2.png" alt="">
             </li>
 
-            <li class="slider__frame glide__slide" style="width: 118.25px; margin-left: 5px; margin-right: 5px;">
+            <li class="slider__frame glide__slide">
               <img src="images/slider_3.png" alt="">
             </li>
 
@@ -342,10 +348,7 @@
 
   </footer>
 
-  <!-- <container>  </container> -->
 
-
-  <!-- <script src="main.js"></script> -->
   <script src="glide/dist/glide.min.js"></script>
 
   <script>
@@ -354,7 +357,7 @@
       startAt: 0,
       type: 'carousel',
       perView: 3,
-      autoplay: 2000,
+      // autoplay: 2000,
       hoverpause: true,
       animationDuration: 1100,
       peek: { before: 150, after: 150 },
