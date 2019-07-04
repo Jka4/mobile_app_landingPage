@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (min-width: 360px) and (max-width: 640px) {
   .firstContainer {
     width: auto;
@@ -175,7 +176,7 @@
     height: 74px;
     text-align: center;
   }
-  .secondContainer__rightBlock .secondContainer__rightBlock_text {
+  .secondContainer__rightBlock p {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -188,7 +189,7 @@
     height: 208px;
     text-align: center;
   }
-  .secondContainer__rightBlock .secondContainer__rightBlock_more {
+  .secondContainer__rightBlock a {
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
@@ -271,7 +272,7 @@
     margin-top: 27px;
     line-height: 37px;
   }
-  .thirdBlock .thirdBlock__left_block .thirdBlock__left_block__text {
+  .thirdBlock .thirdBlock__left_block p {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -284,7 +285,7 @@
     height: 208px;
     text-align: center;
   }
-  .thirdBlock .thirdBlock__left_block .thirdBlock__left_block__more {
+  .thirdBlock .thirdBlock__left_block a {
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
@@ -304,7 +305,7 @@
             justify-content: center;
     background: #fafafa;
   }
-  .fourthBlock .fourthBlock_title {
+  .fourthBlock h2 {
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
@@ -333,6 +334,7 @@
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-right: 0;
   }
   .fourthBlock .fourthBlock_features .fourthBlock_features__element {
     display: -webkit-box;
@@ -379,8 +381,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .sixthBlock .sixthBlock__ttitle {
     font-family: Lato;
@@ -392,8 +392,9 @@
     line-height: 37px;
     padding-top: 57px;
     margin: 0 auto;
+    margin-left: auto;
   }
-  .sixthBlock__featuredUnits {
+  ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -412,7 +413,7 @@
     margin-bottom: 70px;
     width: 92%;
   }
-  .sixthBlock__featuredUnits img {
+  ul li {
     margin-left: 30px;
     margin-top: 30px;
   }
@@ -540,7 +541,7 @@
         -ms-flex-order: 1;
             order: 1;
   }
-  footer .linkBlok {
+  footer ul.linkBloсk {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -555,10 +556,14 @@
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+    margin-left: -20px;
+    margin-top: -10px;
     margin-bottom: 45px;
-    margin-top: 30px;
   }
-  footer .linkBlok a {
+  footer ul.linkBloсk li {
+    margin-left: 20px;
+  }
+  footer ul.linkBloсk a {
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
@@ -570,7 +575,7 @@
     outline: none;
     text-decoration: none;
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: 0;
   }
   footer .socialsBlock {
     -webkit-box-ordinal-group: 3;
