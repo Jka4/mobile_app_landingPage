@@ -213,15 +213,15 @@ body {
     flex-direction: column;
     // margin-left: 180px;
 
-    .secondContainer__rightBlock_pre_title {
+    span {
         @include lato_blue_Bold(16px, 133px);
     }
 
-    .secondContainer__rightBlock_title {
+    h2 {
         @include lato_Bold_title(28px, 27px);
     }
 
-    .secondContainer__rightBlock_text {
+    p {
         @include lato_text(16px, 27px);
         width: 407px;
         height: 185px;
@@ -252,15 +252,15 @@ body {
     flex-direction: column;
     margin-left: 162px;
 
-    .thirdBlock__left_block__Pre_title {
+    span {
         @include lato_blue_Bold(16px, 217px);
     }
 
-    .thirdBlock__left_block__title {
+    h2 {
         @include lato_Bold_title(28px, 27px);
     }
 
-    .thirdBlock__left_block__text {
+    p {
         @include lato_text(16px, 27px);
         width: 480px;
         height: 139px;

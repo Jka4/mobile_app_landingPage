@@ -44,6 +44,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         z-index: 5;
         margin-left: 0;
 
@@ -54,7 +55,7 @@
             }
         }
 
-        .title {
+        h1 {
             @include lato_Bold_title (30px, 80px);
             width: 320px;
             height: 119px;
@@ -62,9 +63,9 @@
 
         }
 
-        .text {
+        p {
             @include lato_text(16px, 30px);
-            width: 320px;
+            width: 80vw;
             height: 70px;
         }
 
@@ -156,11 +157,11 @@
         justify-content: center;
         align-items: center;
 
-        .secondContainer__rightBlock_pre_title {
+        span {
             @include lato_blue_Bold(16px, 54px);
         }
 
-        .secondContainer__rightBlock_title {
+        h2 {
             @include lato_Bold_title(28px, 27px);
             width: 320px;
             height: 74px;
@@ -214,11 +215,11 @@
             margin-left: 0;
 
 
-            .thirdBlock__left_block__Pre_title {
+            span {
                 @include lato_blue_Bold(16px, 62px);
             }
 
-            .thirdBlock__left_block__title {
+            h2 {
                 @include lato_Bold_title(28px, 27px);
             }
 
