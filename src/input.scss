@@ -227,7 +227,7 @@ body {
         height: 185px;
     }
 
-    .secondContainer__rightBlock_more {
+    a {
         @include lato_blue_Bold(16px, 22px);
         cursor: pointer;
     }
@@ -266,7 +266,7 @@ body {
         height: 139px;
     }
 
-    .thirdBlock__left_block__more {
+    a {
         @include lato_blue_Bold(16px, 54px);
         cursor: pointer;
     }
@@ -281,12 +281,14 @@ body {
     width: 1440px;
     margin: 0 auto;
     background: #00adee;
+
+    h2 {
+        @include lato_Bold_title(28px, 76px);
+        color: #fff;
+    }
 }
 
-.fourthBlock_title {
-    @include lato_Bold_title(28px, 76px);
-    color: #fff;
-}
+
 
 .fourthBlock_features {
     display: flex;
@@ -350,7 +352,7 @@ body {
     }
 }
 
-.sixthBlock__featuredUnits {
+ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -358,8 +360,10 @@ body {
     margin-top: 50px;
     margin-right: 80px;
 
-    img {
+    li {
         margin-left: 80px;
+        list-style-type: none;
+
     }
 }
 
@@ -417,15 +421,22 @@ footer {
         cursor: pointer;
         outline: none;
         margin-left: 163px;
-
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
-    .linkBlok {
+    ul {
         display: flex;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        li {
+            margin-left: 35px;
+
+        }
 
         a {
             @include lato_Bold_title (16px, 0);
-            margin-left: 26px;
             color: #fff;
             outline: none;
             text-decoration: none;
