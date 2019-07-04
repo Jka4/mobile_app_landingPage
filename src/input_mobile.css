@@ -21,6 +21,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 5;
     margin-left: 0;
   }
@@ -30,7 +33,7 @@
     display: flex;
     margin: 0 auto;
   }
-  .left_side_of_firstContainer .title {
+  .left_side_of_firstContainer h1 {
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
@@ -42,7 +45,7 @@
     height: 119px;
     text-align: center;
   }
-  .left_side_of_firstContainer .text {
+  .left_side_of_firstContainer p {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -51,7 +54,7 @@
     color: #4f4f4f;
     margin-top: 30px;
     vertical-align: top;
-    width: 320px;
+    width: 80vw;
     height: 70px;
   }
   .left_side_of_firstContainer .downloadLink {
@@ -151,7 +154,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .secondContainer__rightBlock .secondContainer__rightBlock_pre_title {
+  .secondContainer__rightBlock span {
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
@@ -160,7 +163,7 @@
     margin-top: 54px;
     line-height: 21px;
   }
-  .secondContainer__rightBlock .secondContainer__rightBlock_title {
+  .secondContainer__rightBlock h2 {
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
@@ -250,7 +253,7 @@
     height: 460px;
     margin-left: 0;
   }
-  .thirdBlock .thirdBlock__left_block .thirdBlock__left_block__Pre_title {
+  .thirdBlock .thirdBlock__left_block span {
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
@@ -259,7 +262,7 @@
     margin-top: 62px;
     line-height: 21px;
   }
-  .thirdBlock .thirdBlock__left_block .thirdBlock__left_block__title {
+  .thirdBlock .thirdBlock__left_block h2 {
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
