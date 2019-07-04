@@ -92,7 +92,7 @@ body {
 .glide__slides {
     position: relative;
     width: 309px;
-    height: 161px;
+    height: 181px;
     list-style: none;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -121,7 +121,7 @@ body {
 
 .glide__slide {
     width: 300px;
-    height: 220px;
+    height: 280px;
     -ms-flex-negative: 0;
     flex-shrink: 0;
     white-space: normal;
@@ -166,8 +166,8 @@ ul {
 
 .slider__frame {
     text-align: center;
-    height: 70%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     line-height: 170px;
     /* -webkit-box-shadow: inset 0 0 0 2px hsla(0, 0%, 100%, .5); */
     /* box-shadow: inset 0 0 0 2px hsla(0, 0%, 100%, .5); */
