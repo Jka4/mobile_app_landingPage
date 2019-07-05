@@ -50,6 +50,7 @@
 
         .logo {
             img {
+
                 display: flex;
                 margin: 0 auto;
             }
@@ -72,10 +73,13 @@
         .downloadLink {
             justify-content: space-around;
 
-            .android {
+            .android img {
                 cursor: pointer;
                 margin-left: 5vw;
+
             }
+
+
         }
     }
 
@@ -90,9 +94,6 @@
         background: #fff;
     }
 
-    // .suk {
-    //     display: none;
-    // }
 
     .sampleBlock {
         order: 2;
@@ -274,6 +275,7 @@
             }
 
             .element_image {
+
                 margin: 0 auto;
                 filter: invert(48%) sepia(13%) saturate(5207%) hue-rotate(182deg) brightness(99%) contrast(90%);
             }
