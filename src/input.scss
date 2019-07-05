@@ -469,3 +469,18 @@ footer {
         font-size: 32px;
     }
 }
+
+
+.lazy-load,
+.lazy-loaded {
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.lazy-loaded {
+    opacity: 1;
+   }
