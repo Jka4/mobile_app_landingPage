@@ -636,4 +636,15 @@ footer .socialsBlock img {
   font-weight: bolder;
   font-size: 32px;
 }
+
+.lazy-load,
+.lazy-loaded {
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.lazy-loaded {
+  opacity: 1;
+}
 /*# sourceMappingURL=input.css.map */
