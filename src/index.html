@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mob App</title>
-  <link rel="stylesheet" href="input.css">
-  <link rel="stylesheet" href="input_mobile.css">
-  <link rel="stylesheet" href="slider.css">
-  <link rel="stylesheet" href="glide/dist/css/glide.core.min.css">
-  <link rel="stylesheet" href="fonts/lato/lato.css">
+  <link async rel="stylesheet" href="input.css">
+  <link async rel="stylesheet" href="input_mobile.css">
+  <link async rel="stylesheet" href="slider.css">
+  <link async rel="stylesheet" href="glide/dist/css/glide.core.min.css">
+  <link async rel="stylesheet" href="fonts/lato/lato.css">
   <script src="lazyLoad.js"></script>
 </head>
 
@@ -347,13 +347,13 @@
 
   <script src="glide/dist/glide.min.js"></script>
 
-  <script async>
+  <script>
     new Glide('.glide', {
       focusAt: 'center',
       startAt: 0,
       type: 'carousel',
       perView: 3,
-      // autoplay: 2000,
+      autoplay: 2000,
       hoverpause: true,
       animationDuration: 1100,
       peek: { before: 150, after: 150 },
@@ -361,7 +361,7 @@
   </script>
 
 
-  <script defer type="text/javascript">
+  <script async type="text/javascript">
     {
       if (screen.width <= 359) {
         let body = document.querySelector('body');
