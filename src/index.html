@@ -357,7 +357,20 @@
       animationDuration: 1100,
       peek: { before: 150, after: 150 },
     }).mount();
+  </script>
 
+
+  <script defer type="text/javascript">
+    {
+      if (screen.width <= 359) {
+        let body = document.querySelector('body');
+        let cap = document.createElement('cap')
+        cap.innerHTML = '<h5>OOOPS!</h5> your device is not supported';
+        cap.className = 'cap';
+        body.innerHTML = '';
+        body.append(cap);
+      };
+    }
   </script>
 
 </body>
