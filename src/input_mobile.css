@@ -102,15 +102,6 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .sampleBlock .solo {
-    display: none;
-  }
-  .sampleBlock .solo_mobile {
-    display: block;
-    height: 98vw;
-    width: 100vw;
-    margin: 0;
-  }
   .notifications {
     display: none;
   }
