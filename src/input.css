@@ -1,7 +1,7 @@
 @font-face {
   font-family: "LatoRegular";
   src: url("/fonts/lato/LatoRegular.eot");
-  src: url("/fonts/lato/LatoRegular.eot?#iefix") format("embedded-opentype"), url("/fonts/lato/LatoRegular.woff") format("woff"), url("/fonts/Lato/LatoRegular.ttf") format("truetype");
+  src: url("/fonts/lato/LatoRegular.eot?#iefix") format("embedded-opentype"), local("src/fonts/lato/latoregular.woff") url("/fonts/lato/LatoRegular.woff") format("woff"), local("src/fonts/lato/latoregular.ttf") url("/fonts/Lato/LatoRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
