@@ -68,6 +68,7 @@ body {
 
     .logo {
         img {
+
             margin-top: 9.17%;
             cursor: pointer;
         }
@@ -93,13 +94,15 @@ body {
         flex-direction: row;
         margin-top: 7.51%;
 
-        .IOS {
+        .IOS img {
             cursor: pointer;
+
         }
 
-        .android {
+        .android img {
             cursor: pointer;
-            margin-left: 7.51%;
+            margin-left: 35px;
+
         }
     }
 }
@@ -277,7 +280,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 755px;
+    height: 795px;
     width: 1440px;
     margin: 0 auto;
     background: #00adee;
@@ -304,6 +307,13 @@ body {
         height: auto;
         margin-left: 86px;
         margin-top: 50px;
+    }
+
+
+    .element_image img {
+        width: auto;
+        height: auto;
+        // margin-bottom: -25px;
     }
 
     .element_image__title {
@@ -453,6 +463,8 @@ footer {
         }
     }
 }
+
+
 
 
 .cap {

@@ -62,7 +62,7 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .left_side_of_firstContainer .downloadLink .android {
+  .left_side_of_firstContainer .downloadLink .android img {
     cursor: pointer;
     margin-left: 5vw;
   }

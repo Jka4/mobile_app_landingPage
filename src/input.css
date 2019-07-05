@@ -85,13 +85,13 @@ body {
   margin-top: 7.51%;
 }
 
-.left_side_of_firstContainer .downloadLink .IOS {
+.left_side_of_firstContainer .downloadLink .IOS img {
   cursor: pointer;
 }
 
-.left_side_of_firstContainer .downloadLink .android {
+.left_side_of_firstContainer .downloadLink .android img {
   cursor: pointer;
-  margin-left: 7.51%;
+  margin-left: 35px;
 }
 
 .secondContainer {
@@ -346,7 +346,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 755px;
+  height: 795px;
   width: 1440px;
   margin: 0 auto;
   background: #00adee;
@@ -391,6 +391,11 @@ body {
   height: auto;
   margin-left: 86px;
   margin-top: 50px;
+}
+
+.fourthBlock_features .element_image img {
+  width: auto;
+  height: auto;
 }
 
 .fourthBlock_features .element_image__title {
