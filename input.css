@@ -1,14 +1,6 @@
-@font-face {
-  font-family: "LatoRegular";
-  src: url("/fonts/lato/LatoRegular.eot");
-  src: url("/fonts/lato/LatoRegular.eot?#iefix") format("embedded-opentype"), local("src/fonts/lato/latoregular.woff") url("/fonts/lato/LatoRegular.woff") format("woff"), local("src/fonts/lato/latoregular.ttf") url("/fonts/Lato/LatoRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
 body {
   margin: 0 auto;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
@@ -51,7 +43,7 @@ body {
 
 .left_side_of_firstContainer h1 {
   color: #333;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: bold;
@@ -62,7 +54,7 @@ body {
 }
 
 .left_side_of_firstContainer p {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -124,70 +116,166 @@ body {
 
 .sample1 {
   position: absolute;
+  width: 360px;
+  height: 218.06px;
   left: 109px;
   top: 114px;
   z-index: 20;
+  background-color: red;
+  border-radius: 4px;
+  background: #FFFFFF;
+  -webkit-box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
+          box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
+}
+
+.sample1 .sample1Inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 168px;
+}
+
+.sample1 .sample1Inner .sample1LeftSide {
+  margin-top: 12px;
+}
+
+.sample1 .sample1Inner .sample1LeftSide .sampleTime {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16.7833px;
+  line-height: 22px;
+  color: #4F4F4F;
+}
+
+.sample1 .sample1Inner .sample1LeftSide .whoVSwho {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 12px;
+}
+
+.sample1 .sample1Inner .sample1LeftSide .mathType {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  margin-top: 12px;
+}
+
+.sample1 .sample1Inner .sample1Logotype {
+  margin-top: 15px;
+}
+
+.sample1 .sample1Inner .sample1Logotype img {
+  height: 87.87px;
+}
+
+.sample1 .sample1BottomLine {
+  width: 100%;
+  height: 49.27px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  background: #EEEEEE;
   /* Rounded sliders */
 }
 
-.sample1 .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  top: -17px;
-  right: 80px;
+.sample1 .sample1BottomLine h3 {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18.8812px;
+  line-height: 25px;
+  color: #4F4F4F;
+  margin-left: 15px;
 }
 
-.sample1 .switch input {
+.sample1 .sample1BottomLine .switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 15px;
+  margin-left: 8%;
+}
+
+.sample1 .sample1BottomLine .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.sample1 .slider {
+.sample1 .sample1BottomLine .slider {
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #979797;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
-.sample1 .slider:before {
+.sample1 .sample1BottomLine .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 24px;
+  width: 24px;
+  left: -7px;
+  bottom: -4px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
+  -webkit-box-shadow: 0px 2.09791px 2.09791px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2.09791px 2.09791px rgba(0, 0, 0, 0.25);
 }
 
-.sample1 input:checked + .slider {
+.sample1 .sample1BottomLine input:checked + .slider {
   background-color: #2196F3;
 }
 
-.sample1 input:focus + .slider {
+.sample1 .sample1BottomLine input:focus + .slider {
   -webkit-box-shadow: 0 0 1px #2196F3;
           box-shadow: 0 0 1px #2196F3;
 }
 
-.sample1 input:checked + .slider:before {
+.sample1 .sample1BottomLine input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   transform: translateX(26px);
 }
 
-.sample1 .slider.round {
-  border-radius: 34px;
+.sample1 .sample1BottomLine .slider.round {
+  border-radius: 14px;
 }
 
-.sample1 .slider.round:before {
+.sample1 .sample1BottomLine .slider.round:before {
   border-radius: 50%;
 }
 
@@ -196,6 +284,7 @@ body {
   top: 276px;
   left: 270px;
   z-index: 19;
+  border-radius: 4px;
 }
 
 .secondContainer__rightBlock {
@@ -209,7 +298,7 @@ body {
 }
 
 .secondContainer__rightBlock span {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -220,7 +309,7 @@ body {
 
 .secondContainer__rightBlock h2 {
   color: #333;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: bold;
@@ -229,7 +318,7 @@ body {
 }
 
 .secondContainer__rightBlock p {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -242,7 +331,7 @@ body {
 }
 
 .secondContainer__rightBlock a {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -285,7 +374,7 @@ body {
 }
 
 .thirdBlock__left_block span {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -296,7 +385,7 @@ body {
 
 .thirdBlock__left_block h2 {
   color: #333;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: bold;
@@ -305,7 +394,7 @@ body {
 }
 
 .thirdBlock__left_block p {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -318,7 +407,7 @@ body {
 }
 
 .thirdBlock__left_block a {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -350,7 +439,7 @@ body {
 
 .fourthBlock h2 {
   color: #333;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: bold;
@@ -395,7 +484,7 @@ body {
 }
 
 .fourthBlock_features .element_image__title {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -427,7 +516,7 @@ body {
 
 .fifthBlock .fifthBlock__title {
   color: #333;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: bold;
@@ -455,7 +544,7 @@ body {
 
 .sixthBlock .sixthBlock__ttitle {
   color: #333;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: bold;
@@ -510,7 +599,7 @@ ul li {
 
 .seventhBlock__content .seventhBlock__content_title {
   color: #333;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: bold;
@@ -519,7 +608,7 @@ ul li {
 }
 
 .seventhBlock__content .seventhBlock__content_text {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -595,7 +684,7 @@ footer ul li {
 
 footer ul a {
   color: #333;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: bold;

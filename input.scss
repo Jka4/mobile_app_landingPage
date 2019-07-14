@@ -1,17 +1,5 @@
-@font-face {
-    font-family: "LatoRegular";
-    src: url("/fonts/lato/LatoRegular.eot");
-    src: url("/fonts/lato/LatoRegular.eot?#iefix")format("embedded-opentype"),
-        local('src/fonts/lato/latoregular.woff') url("/fonts/lato/LatoRegular.woff") format("woff"),
-        local('src/fonts/lato/latoregular.ttf') url("/fonts/Lato/LatoRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
-
-
 @mixin lato_blue_Bold($font-size, $margin-top) {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: $font-size;
@@ -22,7 +10,7 @@
 
 @mixin lato_Bold_title($font-size, $margin-top) {
     color: #333;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: $font-size;
     font-style: normal;
     font-weight: bold;
@@ -31,7 +19,7 @@
 }
 
 @mixin lato_text($font-size, $margin-top) {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: $font-size;
@@ -43,7 +31,7 @@
 
 body {
     margin: 0 auto;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-style: normal;
     font-weight: normal;
 }
@@ -128,89 +116,169 @@ body {
 
 .sample1 {
     position: absolute;
+    width: 360px;
+    height: 218.06px;
     left: 109px;
     top: 114px;
     z-index: 20;
+    background-color: red;
+    border-radius: 4px;
+    background: #FFFFFF;
+    box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
 
-    .switch {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        height: 34px;
-        top: -17px;
-        right: 80px;
+
+    .sample1Inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 168px;
+
+        .sample1LeftSide {
+            margin-top: 12px;
+
+
+            .sampleTime {
+                font-family: Lato, sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16.7833px;
+                line-height: 22px;
+                color: #4F4F4F;
+            }
+
+            .whoVSwho {
+                font-family: Lato, sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 24px;
+                color: #000000;
+                margin-top: 12px;
+            }
+
+            .mathType {
+                font-family: Lato, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 21px;
+                color: #000000;
+                margin-top: 12px;
+
+            }
+        }
+
+        .sample1Logotype {
+            margin-top: 15px;
+
+            img {
+                height: 87.87px;
+            }
+        }
     }
 
-    .switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
 
-    .slider {
+
+    .sample1BottomLine {
+        width: 100%;
+        height: 49.27px;
         position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
         bottom: 0;
-        background-color: #ccc;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
+        background: #EEEEEE;
 
-    .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
+        h3 {
+            font-family: Lato, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18.8812px;
+            line-height: 25px;
+            color: #4F4F4F;
+            margin-left: 15px;
+        }
 
-    input:checked+.slider {
-        background-color: #2196F3;
-    }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 15px;
+            margin-left: 8%;
+        }
 
-    input:focus+.slider {
-        box-shadow: 0 0 1px #2196F3;
-    }
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
 
-    input:checked+.slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
-    }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #979797;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
 
-    /* Rounded sliders */
-    .slider.round {
-        border-radius: 34px;
-    }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 24px;
+            width: 24px;
+            left: -7px;
+            bottom: -4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+            box-shadow: 0px 2.09791px 2.09791px rgba(0, 0, 0, 0.25);
+        }
 
-    .slider.round:before {
-        border-radius: 50%;
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 14px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+
     }
 }
-
-
-
-
-
 
 .sample2 {
     position: absolute;
     top: 276px;
     left: 270px;
     z-index: 19;
+    border-radius: 4px;
+
 }
 
 .secondContainer__rightBlock {
     display: flex;
     flex-direction: column;
-    // margin-left: 180px;
 
     span {
         @include lato_blue_Bold(16px, 133px);
@@ -313,7 +381,7 @@ body {
     }
 
     .element_image__title {
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
