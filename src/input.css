@@ -431,7 +431,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 795px;
+  height: 825px;
   width: 1440px;
   margin: 0 auto;
   background: #00adee;
@@ -472,15 +472,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 311px;
+  width: 25%;
   height: auto;
   margin-left: 86px;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .fourthBlock_features .element_image img {
   width: auto;
   height: auto;
+  margin-bottom: -15px;
+  margin-left: 20px;
 }
 
 .fourthBlock_features .element_image__title {
@@ -491,6 +493,8 @@ body {
   line-height: 23px;
   color: #fff;
   margin-top: 16px;
+  margin-bottom: -20px;
+  width: 100%;
 }
 
 .fifthBlock {
@@ -553,7 +557,7 @@ body {
   margin: 0 auto;
 }
 
-ul {
+.sixthBlock ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -571,7 +575,7 @@ ul {
   margin-right: 80px;
 }
 
-ul li {
+.sixthBlock ul li {
   margin-left: 80px;
   list-style-type: none;
 }
