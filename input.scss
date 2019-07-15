@@ -344,7 +344,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 795px;
+    height: 795px + 30px;
     width: 1440px;
     margin: 0 auto;
     background: #00adee;
@@ -367,17 +367,18 @@ body {
     .fourthBlock_features__element {
         display: flex;
         flex-direction: column;
-        width: 311px;
+        width: 25%;
         height: auto;
         margin-left: 86px;
-        margin-top: 50px;
+        margin-top: 60px;
     }
 
 
     .element_image img {
         width: auto;
         height: auto;
-        // margin-bottom: -25px;
+        margin-bottom: -15px;
+        margin-left: 20px;
     }
 
     .element_image__title {
@@ -388,6 +389,8 @@ body {
         line-height: 23px;
         color: #fff;
         margin-top: 16px;
+        margin-bottom: -20px;
+        width: 100%;
     }
 }
 
@@ -424,22 +427,24 @@ body {
         margin: 0 auto;
 
     }
-}
 
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-right: 80px;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-right: 80px;
 
-    li {
-        margin-left: 80px;
-        list-style-type: none;
+        li {
+            margin-left: 80px;
+            list-style-type: none;
 
+        }
     }
 }
+
+
 
 .seventhBlock {
     width: 1440px;
