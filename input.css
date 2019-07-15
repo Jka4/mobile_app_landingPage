@@ -684,6 +684,7 @@ footer ul {
 
 footer ul li {
   margin-left: 35px;
+  list-style-type: none;
 }
 
 footer ul a {
