@@ -38,8 +38,15 @@ body {
 
 .firstContainer {
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     width: 1440px;
     height: 665px;
@@ -48,7 +55,12 @@ body {
 }
 
 .left_side_of_firstContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: auto;
     z-index: 5;
@@ -78,7 +90,12 @@ body {
     }
 
     .downloadLink {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
         margin-top: 7.51%;
 
@@ -97,8 +114,15 @@ body {
 
 .secondContainer {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     margin: 0 auto;
     width: 1440px;
@@ -111,6 +135,8 @@ body {
 }
 
 .sampleBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -124,13 +150,22 @@ body {
     background-color: red;
     border-radius: 4px;
     background: #FFFFFF;
+    -webkit-box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
     box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
 
 
     .sample1Inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         height: 168px;
 
@@ -184,9 +219,18 @@ body {
         width: 100%;
         height: 49.27px;
         position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: flex-start;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         bottom: 0;
         background: #EEEEEE;
@@ -237,6 +281,7 @@ body {
             background-color: white;
             -webkit-transition: .4s;
             transition: .4s;
+            -webkit-box-shadow: 0px 2.09791px 2.09791px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 2.09791px 2.09791px rgba(0, 0, 0, 0.25);
         }
 
@@ -245,12 +290,12 @@ body {
         }
 
         input:focus+.slider {
+            -webkit-box-shadow: 0 0 1px #2196F3;
             box-shadow: 0 0 1px #2196F3;
         }
 
         input:checked+.slider:before {
             -webkit-transform: translateX(26px);
-            -ms-transform: translateX(26px);
             transform: translateX(26px);
         }
 
@@ -277,7 +322,12 @@ body {
 }
 
 .secondContainer__rightBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 
     span {
@@ -301,8 +351,15 @@ body {
 }
 
 .thirdBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     margin: 0 auto;
     height: 716px;
@@ -315,7 +372,12 @@ body {
 }
 
 .thirdBlock__left_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin-left: 162px;
 
@@ -340,9 +402,18 @@ body {
 }
 
 .fourthBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 795px + 30px;
     width: 1440px;
@@ -358,14 +429,27 @@ body {
 
 
 .fourthBlock_features {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: 50px;
 
     .fourthBlock_features__element {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         width: 25%;
         height: auto;
@@ -396,9 +480,18 @@ body {
 
 // СЛАЙДЕР
 .fifthBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin: 0 auto;
     width: 1440px;
@@ -414,8 +507,15 @@ body {
 }
 
 .sixthBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: 0 auto;
     width: 1440px;
@@ -429,9 +529,18 @@ body {
     }
 
     ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         margin-top: 50px;
         margin-right: 80px;
@@ -448,8 +557,15 @@ body {
 .seventhBlock {
     width: 1440px;
     height: 482px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: 0 auto;
     background: url(images/pre_footer_image.png) no-repeat 0% 10%;
@@ -469,7 +585,12 @@ body {
     }
 
     .downloadLink_footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
         margin-top: 7.51%;
 
@@ -489,10 +610,20 @@ footer {
     height: 127px;
     background: #00adee;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     .logos {
@@ -504,6 +635,8 @@ footer {
     }
 
     ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-top: 0;
         margin-bottom: 0;
@@ -534,9 +667,6 @@ footer {
 
 .lazy-load {
     -webkit-transition: opacity 0.3s;
-    -moz-transition: opacity 0.3s;
-    -ms-transition: opacity 0.3s;
-    -o-transition: opacity 0.3s;
     transition: opacity 0.3s;
     opacity: 0;
 }
