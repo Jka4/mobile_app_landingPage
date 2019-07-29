@@ -698,7 +698,7 @@ footer ul a {
   color: #fff;
   outline: none;
   text-decoration: none;
-  cursor: pointer;
+  cursor: 2;
 }
 
 footer .socialsBlock {
