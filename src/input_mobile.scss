@@ -44,17 +44,19 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         z-index: 5;
         margin-left: 0;
 
         .logo {
             img {
+
                 display: flex;
                 margin: 0 auto;
             }
         }
 
-        .title {
+        h1 {
             @include lato_Bold_title (30px, 80px);
             width: 320px;
             height: 119px;
@@ -62,19 +64,22 @@
 
         }
 
-        .text {
+        p {
             @include lato_text(16px, 30px);
-            width: 320px;
+            width: 80vw;
             height: 70px;
         }
 
         .downloadLink {
             justify-content: space-around;
 
-            .android {
+            .android img {
                 cursor: pointer;
                 margin-left: 5vw;
+
             }
+
+
         }
     }
 
@@ -89,9 +94,6 @@
         background: #fff;
     }
 
-    // .suk {
-    //     display: none;
-    // }
 
     .sampleBlock {
         order: 2;
@@ -99,22 +101,10 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
-
-        .solo {
-            display: none;
-        }
-
-        .solo_mobile {
-            display: block;
-            height: 98vw;
-            width: 100vw;
-            margin: 0;
-        }
-
+        align-items: center
     }
 
-    .suka {
+    .notifications {
         display: none;
     }
 
@@ -134,7 +124,6 @@
 
             box-shadow: -15.1278px 16.3884px 33.6173px rgba(0, 0, 0, 0.5);
             border-radius: 2.74531px;
-
         }
 
         #dos {
@@ -156,19 +145,20 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 20px;
 
-        .secondContainer__rightBlock_pre_title {
+        span {
             @include lato_blue_Bold(16px, 54px);
         }
 
-        .secondContainer__rightBlock_title {
+        h2 {
             @include lato_Bold_title(28px, 27px);
             width: 320px;
             height: 74px;
             text-align: center;
         }
 
-        .secondContainer__rightBlock_text {
+        p {
             @include lato_text(16px, 20px);
             width: 320px;
             height: 208px;
@@ -176,7 +166,7 @@
 
         }
 
-        .secondContainer__rightBlock_more {
+        a {
             @include lato_blue_Bold(16px, 22px);
             cursor: pointer;
         }
@@ -195,7 +185,7 @@
 
         .thirdBlock__right_mobile {
             margin: 0 auto;
-            margin-top: 5px;
+            margin-top: 25px;
             width: 100vw;
             height: 100vw + 63.25vw;
             display: flex;
@@ -215,22 +205,22 @@
             margin-left: 0;
 
 
-            .thirdBlock__left_block__Pre_title {
+            span {
                 @include lato_blue_Bold(16px, 62px);
             }
 
-            .thirdBlock__left_block__title {
+            h2 {
                 @include lato_Bold_title(28px, 27px);
             }
 
-            .thirdBlock__left_block__text {
+            p {
                 @include lato_text(16px, 27px);
                 width: 320px;
                 height: 208px;
                 text-align: center;
             }
 
-            .thirdBlock__left_block__more {
+            a {
                 @include lato_blue_Bold(16px, 54px);
                 cursor: pointer;
             }
@@ -246,7 +236,7 @@
         justify-content: center;
         background: #fafafa;
 
-        .fourthBlock_title {
+        h2 {
             @include lato_Bold_title(28px, 42px);
             color: #333;
             width: 318px;
@@ -261,6 +251,7 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
+            margin-right: 0;
 
             .fourthBlock_features__element {
                 display: flex;
@@ -272,6 +263,7 @@
             }
 
             .element_image {
+
                 margin: 0 auto;
                 filter: invert(48%) sepia(13%) saturate(5207%) hue-rotate(182deg) brightness(99%) contrast(90%);
             }
@@ -308,16 +300,16 @@
         width: 100%;
         height: auto;
         flex-direction: column;
-        flex-wrap: wrap;
 
         .sixthBlock__ttitle {
             @include lato_Bold_title(28px, 57px);
             padding-top: 57px;
             margin: 0 auto;
+            margin-left: auto;
         }
     }
 
-    .sixthBlock__featuredUnits {
+    ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -327,7 +319,7 @@
         margin-bottom: 70px;
         width: 92%;
 
-        img {
+        li {
             margin-left: 30px;
             margin-top: 30px;
         }
@@ -415,14 +407,21 @@
             order: 1;
         }
 
-        .linkBlok {
+        ul.linkBloсk {
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
             width: 100%;
             order: 3;
+            margin-left: -20px;
+            margin-top: -10px;
             margin-bottom: 45px;
-            margin-top: 30px;
+
+
+
+            li {
+                margin-left: 20px;
+            }
 
             a {
                 @include lato_Bold_title (16px, 0);
@@ -430,7 +429,7 @@
                 outline: none;
                 text-decoration: none;
                 cursor: pointer;
-                margin-left: 20px;
+                margin-left: 0;
             }
         }
 
@@ -438,7 +437,7 @@
             order: 2;
             margin-left: 20px;
             margin-right: 0;
-            margin-top: 15px;
+            margin-top: 25px;
 
             img {
                 margin-right: 17px;

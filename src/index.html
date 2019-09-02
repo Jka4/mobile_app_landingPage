@@ -6,227 +6,267 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mob App</title>
-  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="input.css">
   <link rel="stylesheet" href="input_mobile.css">
   <link rel="stylesheet" href="slider.css">
   <link rel="stylesheet" href="glide/dist/css/glide.core.min.css">
   <link rel="stylesheet" href="fonts/lato/lato.css">
+  <script async src="lazyLoad.js"></script>
 </head>
 
 <body>
 
-  <container class="firstContainer">
+  <section class="firstContainer">
 
     <div class="left_side_of_firstContainer">
-      <div class="logo">
-        <img src="images/LOGO.png" alt="">
-      </div>
-      <div class="title">Get a personalized football experience tailored just for you</div>
-      <div class="text">Achieve super-fan status by getting tailored updates and up-to-the-minute information on
-        your team.</div>
+      <a href="https://jka4.github.io/mobile_app_landingPage/" class="logo">
+        <img class="lazy-load" data-src="images/LOGO.svg" src="images/LOGO.svg" alt="">
+      </a>
+      <h1>Get a personalized football experience tailored just for you</h1>
+      <p class="text">Achieve super-fan status by getting tailored updates and up-to-the-minute information on
+        your team.</p>
       <div class="downloadLink">
-        <div class="IOS">
-          <img src="images/Apple Store.png" alt="">
-        </div>
-        <div class="android">
-          <img src="images/Google Play.png" alt="">
-        </div>
+        <a href="#" class="IOS">
+          <img class="lazy-load" data-src="images/Apple_Store.svg" src="images/Apple_Store.svg" alt="">
+        </a>
+        <a href="#" class="android">
+          <img class="lazy-load" data-src="images/Google_Play.svg" src="images/Google_Play.svg" alt="">
+        </a>
       </div>
-
     </div>
 
-  </container>
+  </section>
 
-  <container class="secondContainer">
+  <section class="secondContainer">
 
     <div class="sampleBlock">
 
-      <img class="solo" src="images/secondContainer_background.png" alt="">
-      <img class="solo_mobile" src="images/secondContainer_background__mobile.png" alt="">
+      <img class="lazy-load solo" data-src="images/secondContainer_background.png"
+        src="images/secondContainer_background.png" alt="">
+      <!-- <img class="lazy-load" class="solo_mobile" data-src="images/secondContainer_background__mobile.png" alt=""> -->
 
-      <div class="suka">
+      <div class="notifications">
         <div class="sample1">
-          <img src="images/SAMPLE01.png" alt="">
+
+          <div class="sample1Inner">
+
+            <div class="sample1LeftSide">
+              <div class="sampleTime">Sat, 12:35pm</div>
+              <div class="whoVSwho">Arsenal vs <br> Chelsea</div>
+              <div class="mathType">Friendly Match</div>
+            </div>
+
+            <div class="sample1Logotype">
+              <img class="lazy-load" data-src="images/arsenal.png" src="images/arsenal.png" alt="">
+            </div>
+          </div>
+
+          <div class="sample1BottomLine">
+            <h3>Turn on all match notifications</h3>
+
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+
         </div>
         <div class="sample2">
-          <img src="images/SAMPLE02.png" alt="">
+          <img class="lazy-load" data-src="images/SAMPLE02.png" src="images/SAMPLE02.png" alt="">
         </div>
       </div>
 
-
       <div class="sample">
-        <img id="uno" src="images/SAMPLE01.png" alt="">
-
-        <img id="dos" src="images/SAMPLE02.png" alt="">
+        <img class="lazy-load" id="uno" data-src="images/SAMPLE01_mob.png" src="images/SAMPLE01_mob.png" alt="">
+        <img class="lazy-load" id="dos" data-src="images/SAMPLE02.png" src="images/SAMPLE02.png" alt="">
       </div>
-
-
 
     </div>
 
     <div class="secondContainer__rightBlock">
-      <div class="secondContainer__rightBlock_pre_title">WHAT IT DOES</div>
-      <div class="secondContainer__rightBlock_title">An Enhanced Football Experience</div>
-      <div class="secondContainer__rightBlock_text">
+      <span>WHAT IT DOES</span>
+      <h2>An Enhanced Football Experience</h2>
+      <p>
         The Guardian Live Scores app is your go to app for live scores and
         watching Premier League goals… Get in there, what a result!
         As well as videos of all the goals, you can watch match highlights,
         check out the latest scores and results andstay bang-up-to-date
-        with the big football stories from The Guardian publication.</div>
-      <div class="secondContainer__rightBlock_more">Learn more</div>
+        with the big football stories from The Guardian publication.</p>
+      <a>Learn more</a>
     </div>
-  </container>
+  </section>
 
-  <container class="thirdBlock">
+  <section class="thirdBlock">
 
     <div class="thirdBlock__left_block">
-      <div class="thirdBlock__left_block__Pre_title">GET STARTED</div>
-      <div class="thirdBlock__left_block__title">User-friendly Interface</div>
-      <div class="thirdBlock__left_block__text">
+      <span>GET STARTED</span>
+      <h2>User-friendly Interface</h2>
+      <p>
         The in-game goal clips from every Premier League match are available to
         Guardian TV customers with a Guardian subscription. <br><br>
         So, if you’re not a subscriber, now’s the time to make that savvy call.
         If that’s a step too far for you, you can still watch loads of
         firecracker Premier League action as long as you sign in with
-        a free Guardian iD.</div>
-      <div class="thirdBlock__left_block__more">Learn more</div>
+        a free Guardian iD.</p>
+      <a>Learn more</a>
     </div>
     <div class="thirdBlock__right_mobile"></div>
-  </container>
+  </section>
 
-  <container class="fourthBlock">
-    <div class="fourthBlock_title">Features That Will Tailor Your Experience</div>
-
+  <section class="fourthBlock">
+    <h2>Features That Will Tailor Your Experience</h2>
 
     <div class="fourthBlock_features">
-
       <div class="fourthBlock_features__element">
         <div class="element_image">
-          <img src="images/1.png" alt=""></div>
+          <img class="lazy-load" data-src="images/1.svg" src="images/1.svg" alt=""></div>
         <div class="element_image__title">
-          <li>Video highlights for every Premier League and English
-            Football League game
+          <ul>
+            <li> Video highlights for every Premier League and English
+              Football League game
+          </ul>
         </div>
       </div>
 
       <div class="fourthBlock_features__element">
         <div class="element_image">
-          <img src="images/2.png" alt=""></div>
+          <img class="lazy-load" data-src="images/2.svg" src="images/2.svg" alt=""></div>
         <div class="element_image__title">
-          <li> Notifications for your teams, including
-            in-game goal clips and Premier League match highlights for Sky TV
-            subscribers with Guardian.
+          <ul>
+
+            <li> Notifications for your teams, including
+              in-game goal clips and Premier League match highlights for Sky TV
+              subscribers with Guardian.
+            </li>
+          </ul>
+
         </div>
       </div>
 
       <div class="fourthBlock_features__element">
         <div class="element_image">
-          <img src="images/3.png" alt=""></div>
+          <img class="lazy-load" data-src="images/3.svg" src="images/3.svg" alt=""></div>
         <div class="element_image__title">
-          <li> Brand new video section including dedicated areas
-            for your chosen team, trending video, Premier League,
-            Football league and other major leagues
+          <ul>
+            <li> Brand new video section including dedicated areas
+              for your chosen team, trending video, Premier League,
+              Football league and other major leagues
+            </li>
+          </ul>
         </div>
       </div>
 
       <div class="fourthBlock_features__element">
         <div class="element_image">
-          <img src="images/4.png" alt=""></div>
+          <img class="lazy-load" data-src="images/4.svg" src="images/4.svg" alt=""></div>
         <div class="element_image__title">
-          <li> Match pages showing live scores, commentary,
-            team line-ups and enhanced match stats to keep
-            you up-to-date on all the action
+          <ul>
+            <li> Match pages showing live scores, commentary,
+              team line-ups and enhanced match stats to keep
+              you up-to-date on all the action
+            </li>
+          </ul>
         </div>
       </div>
 
       <div class="fourthBlock_features__element">
         <div class="element_image">
-          <img src="images/5.png" alt=""></div>
+          <img class="lazy-load" data-src="images/5.svg" src="images/5.svg" alt=""></div>
         <div class="element_image__title">
-          <li> The new picture in picture video mode means
-            you can watch goals, manager interviews and
-            more whilst using other areas of the app – so
-            you don’t need to miss any of the action
+          <ul>
+            <li> The new picture in picture video mode means
+              you can watch goals, manager interviews and
+              more whilst using other areas of the app – so
+              you don’t need to miss any of the action
+            </li>
+          </ul>
         </div>
       </div>
 
       <div class="fourthBlock_features__element">
         <div class="element_image">
-          <img src="images/6.png" alt=""></div>
+          <img class="lazy-load" data-src="images/6.svg" src="images/6.svg" alt=""></div>
         <div class="element_image__title">
-          <li> Live updated league tables including all the domestic,
-            European and major leagues and tournaments
+          <ul>
+            <li> Live updated league tables including all the domestic,
+              European and major leagues and tournaments
+            </li>
+          </ul>
         </div>
       </div>
 
 
       <div class="fourthBlock_features__element">
         <div class="element_image">
-          <img src="images/7.png" alt=""></div>
+          <img class="lazy-load" data-src="images/7.svg" src="images/7.svg" alt=""></div>
         <div class="element_image__title">
-          <li> The Guardian News Vidiprinter. Follow the goals as
-            they go in with our new and improved Vidiprinter
+          <ul>
+            <li> The Guardian News Vidiprinter. Follow the goals as
+              they go in with our new and improved Vidiprinter
+            </li>
+          </ul>
         </div>
       </div>
 
       <div class="fourthBlock_features__element">
         <div class="element_image">
-          <img src="images/8.png" alt=""></div>
+          <img class="lazy-load" data-src="images/8.svg" src="images/8.svg" alt=""></div>
         <div class="element_image__title">
-          <li> Match reports, previews and a dedicated news section
+          <ul>
+            <li> Match reports, previews and a dedicated news section
+            </li>
+          </ul>
         </div>
       </div>
 
       <div class="fourthBlock_features__element">
         <div class="element_image">
-          <img src="images/9.png" alt=""></div>
+          <img class="lazy-load" data-src="images/9.svg" src="images/9.svg" alt=""></div>
         <div class="element_image__title">
-          <li> And you can achieve super-fan status by personalising
-            your home page with up-to-the-minute information
-            on your team.
+          <ul>
+            <li> And you can achieve super-fan status by personalising
+              your home page with up-to-the-minute information
+              on your team.
+            </li>
+          </ul>
         </div>
       </div>
-
-
     </div>
 
-  </container>
+  </section>
 
+  <section class="fifthBlock">
 
-  <container class="fifthBlock">
-
-    <div class="fifthBlock__title">What Our Users Say</div>
+    <h2 class="fifthBlock__title">What Our Users Say</h2>
 
     <div class="example__frame">
       <div id="intro" class="slider glide glide--ltr glide--carousel glide--swipeable">
         <div class="slider__track glide__track" data-glide-el="track">
           <ul class="slider__slides glide__slides"
-            style="transition: transform 0ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; width: 2298.5px; transform: translate3d(-320.625px, 0px, 0px);">
+            style="transition: transform 0ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; width: 1298.5px; transform: translate3d(-320.625px, 0px, 0px);">
 
-
-
-            <li class="slider__frame glide__slide" style="width: 118.25px; margin-right: 5px;">
-              <img src="images/slider_1.png" alt="">
+            <li class="slider__frame glide__slide">
+              <img class="lazy-load" data-src="images/slider_1.png" src="images/slider_1.png" alt="">
             </li>
 
-            <li class="slider__frame glide__slide" style="width: 118.25px; margin-left: 5px; margin-right: 5px;">
-              <img src="images/slider_2.png" alt="">
+            <li class="slider__frame glide__slide">
+              <img class="lazy-load" data-src="images/slider_2.png" src="images/slider_2.png" alt="">
             </li>
 
-            <li class="slider__frame glide__slide" style="width: 118.25px; margin-left: 5px; margin-right: 5px;">
-              <img src="images/slider_3.png" alt="">
+            <li class="slider__frame glide__slide">
+              <img class="lazy-load" data-src="images/slider_3.png" src="images/slider_3.png" alt="">
             </li>
 
-            <li class="slider__frame glide__slide" style="width: 118.25px; margin-left: 5px; margin-right: 5px;">
-              <img src="images/slider_1.png" alt="">
+            <li class="slider__frame glide__slide">
+              <img class="lazy-load" data-src="images/slider_1.png" src="images/slider_1.png" alt="">
             </li>
 
-            <li class="slider__frame glide__slide" style="width: 118.25px; margin-left: 5px; margin-right: 5px;">
-              <img src="images/slider_2.png" alt="">
+            <li class="slider__frame glide__slide">
+              <img class="lazy-load" data-src="images/slider_2.png" src="images/slider_2.png" alt="">
             </li>
 
-            <li class="slider__frame glide__slide" style="width: 118.25px; margin-left: 5px; margin-right: 5px;">
-              <img src="images/slider_3.png" alt="">
+            <li class="slider__frame glide__slide">
+              <img class="lazy-load" data-src="images/slider_3.png" src="images/slider_3.png" alt="">
             </li>
 
           </ul>
@@ -248,58 +288,48 @@
         </div>
 
         <div class="slider__bullets glide__bullets" data-glide-el="controls[nav]">
-
           <button class="slider__bullet glide__bullet glide__bullet--active" data-glide-dir="=0"></button>
-
           <button class="slider__bullet glide__bullet" data-glide-dir="=1"></button>
-
           <button class="slider__bullet glide__bullet" data-glide-dir="=2"></button>
-
           <button class="slider__bullet glide__bullet" data-glide-dir="=3"></button>
-
           <button class="slider__bullet glide__bullet" data-glide-dir="=4"></button>
-
           <button class="slider__bullet glide__bullet" data-glide-dir="=5"></button>
-
         </div>
       </div>
-
-
     </div>
 
-  </container>
+  </section>
+
+  <section class="sixthBlock">
+    <h2 class="sixthBlock__ttitle">We have been featured in</h2>
+
+    <ul>
+      <li>
+        <img class="lazy-load" data-src="images/sports.png" src="images/sports.png" alt="">
+      </li>
+      <li>
+        <img class="lazy-load" data-src="images/sportsTV.png" src="images/sportsTV.png" alt="">
+      </li>
+      <li>
+        <img class="lazy-load" data-src="images/nbc-sports-1.png" src="images/nbc-sports-1.png" alt="">
+      </li>
+      <li>
+        <img class="lazy-load" data-src="images/designer-news.png" src="images/designer-news.png" alt="">
+      </li>
+      <li>
+        <img class="lazy-load" data-src="images/designer-technology.png" src="images/designer-technology.png" alt="">
+      </li>
+      <li>
+        <img class="lazy-load" data-src="images/sky-sports-1.png" src="images/sky-sports-1.png" alt="">
+      </li>
+    </ul>
+
+  </section>
 
 
-
-  <container class="sixthBlock">
-    <div class="sixthBlock__ttitle">We have been featured in</div>
-
-    <div class="sixthBlock__featuredUnits">
-      <div>
-        <img src="images/sports.png" alt="">
-      </div>
-      <div>
-        <img src="images/sportsTV.png" alt="">
-      </div>
-      <div>
-        <img src="images/nbc-sports-1.png" alt="">
-      </div>
-      <div>
-        <img src="images/designer-news.png" alt="">
-      </div>
-      <div>
-        <img src="images/designer-technology.png" alt="">
-      </div>
-      <div>
-        <img src="images/sky-sports-1.png" alt="">
-      </div>
-    </div>
-  </container>
-
-
-  <container class="seventhBlock">
+  <section class="seventhBlock">
     <div class="seventhBlock__content">
-      <div class="seventhBlock__content_title">Get Up Close With Your Team</div>
+      <h2 class="seventhBlock__content_title">Get Up Close With Your Team</h2>
       <div class="seventhBlock__content_text">
         If you’re interested in the scores of more than one team
         (it’s OK, we won’t tell your mates you support two clubs!),
@@ -310,42 +340,43 @@
 
       <div class="downloadLink_footer">
         <div class="IOS_footer">
-          <img src="images/Apple Store.png" alt="">
+          <img class="lazy-load" data-src="images/Apple_Store.svg" src="images/Apple_Store.svg" alt="">
         </div>
         <div class="android_footer">
-          <img src="images/Google Play.png" alt="">
+          <img class="lazy-load" data-src="images/Google_Play.svg" src="images/Google_Play.svg" alt="">
         </div>
       </div>
     </div>
     <div class="seventhBlock__left_mobile"></div>
 
-  </container>
+  </section>
 
 
-  <footer>
+
+
+  <footer class="soloto">
     <div class="logos">
-      <img src="images/logo_footer.png" alt="">
+      <img class="lazy-load" data-src="images/logo_footer.svg" src="images/logo_footer.svg" alt="">
     </div>
 
-    <div class="linkBlok">
-      <a href="#">Download</a>
-      <a href="#">Support</a>
-      <a href="#">Developers</a>
-      <a href="#">Privacy</a>
-    </div>
+    <ul class="linkBloсk">
+      <li> <a href="#">Download</a></li>
+      <li> <a href="#">Support</a></li>
+      <li> <a href="#">Developers</a></li>
+      <li> <a href="#">Privacy</a></li>
+    </ul>
 
     <div class="socialsBlock">
-      <img src="images/twitter 2.png" alt="">
-      <img src="images/facebook 2.png" alt="">
-      <img src="images/instagram 2.png" alt="">
+      <img class="lazy-load" data-src="images/twitter_2.svg" src="images/twitter_2.svg" alt="">
+      <img class="lazy-load" data-src="images/facebook_2.svg" src="images/facebook_2.svg" alt="">
+      <img class="lazy-load" data-src="images/instagram_2.svg" src="images/instagram_2.svg" alt="">
     </div>
 
   </footer>
 
-  <!-- <container>  </container> -->
 
 
-  <!-- <script src="main.js"></script> -->
+
   <script src="glide/dist/glide.min.js"></script>
 
   <script>
@@ -359,7 +390,20 @@
       animationDuration: 1100,
       peek: { before: 150, after: 150 },
     }).mount();
+  </script>
 
+
+  <script>
+    {
+      if (screen.width <= 359) {
+        let body = document.querySelector('body');
+        let cap = document.createElement('cap')
+        cap.innerHTML = '<h5>OOOPS!</h5> your device is not supported';
+        cap.className = 'cap';
+        body.innerHTML = '';
+        body.append(cap);
+      };
+    }
   </script>
 
 </body>
