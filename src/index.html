@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mob App</title>
-  <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <link rel="stylesheet" href="input.css">
   <link rel="stylesheet" href="input_mobile.css">
   <link rel="stylesheet" href="slider.css">
@@ -17,22 +17,27 @@
 <body>
 
 
-    <script>
-        $(window).on('load', function () {
-          $preloader = $('.preloader'),
-            $loader = $preloader.find('.prePreloader');
-          $loader.fadeOut();
-          $preloader.delay(350).fadeOut('slow');
-        });
-      </script>
+  <!-- ***  preloader -->
 
-        <div class="preloader">
+  <div class="preloader">
     <div class="preloader_inner">
       <img class="elem__1" src="./images/z_3@3x_.png" alt="">
       <img class="elem__2" src="./images/z_3@3x_.png" alt="">
       <img class="elem__3" src="./images/z_3@3x_.png" alt="">
     </div>
   </div>
+
+  <script>
+    $(window).on('load', function () {
+      $preloader = $('.preloader'),
+        $loader = $preloader.find('.preloader_inner');
+      $loader.fadeOut();
+      $preloader.delay(350).fadeOut('slow');
+    });
+
+  </script>
+
+
 
   <section class="firstContainer">
 
@@ -382,13 +387,16 @@
       <li> <a href="#">Privacy</a></li>
     </ul>
 
-    <img class="socialsBlock">
+    <div class="socialsBlock">
       <img src="images/twitter_2.svg" alt="">
       <img src="images/facebook_2.svg" alt="">
       <img src="images/instagram_2.svg" alt="">
-    </img>
+    </div>
 
   </footer>
+
+
+
 
 
 
