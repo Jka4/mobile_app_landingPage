@@ -18,8 +18,8 @@ body {
   -ms-flex-pack: start;
   justify-content: flex-start;
   width: 1440px;
-  height: 665px;
-  background: url(images/Frame_phones.png) no-repeat 100% 50%;
+  height: 100vh;
+  background: url(images/Frame_phones.png) no-repeat 100% 0%;
   background-color: #f4f6f9;
 }
 
@@ -123,7 +123,7 @@ body {
   z-index: 20;
   background-color: red;
   border-radius: 4px;
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
   box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
 }
@@ -154,7 +154,7 @@ body {
   font-weight: bold;
   font-size: 16.7833px;
   line-height: 22px;
-  color: #4F4F4F;
+  color: #4f4f4f;
 }
 
 .sample1 .sample1Inner .sample1LeftSide .whoVSwho {
@@ -203,7 +203,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   bottom: 0;
-  background: #EEEEEE;
+  background: #eeeeee;
   /* Rounded sliders */
 }
 
@@ -213,7 +213,7 @@ body {
   font-weight: normal;
   font-size: 18.8812px;
   line-height: 25px;
-  color: #4F4F4F;
+  color: #4f4f4f;
   margin-left: 15px;
 }
 
@@ -239,8 +239,8 @@ body {
   right: 0;
   bottom: 0;
   background-color: #979797;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .sample1 .sample1BottomLine .slider:before {
@@ -251,22 +251,22 @@ body {
   left: -7px;
   bottom: -4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   -webkit-box-shadow: 0px 2.09791px 2.09791px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 2.09791px 2.09791px rgba(0, 0, 0, 0.25);
 }
 
-.sample1 .sample1BottomLine input:checked+.slider {
-  background-color: #2196F3;
+.sample1 .sample1BottomLine input:checked + .slider {
+  background-color: #2196f3;
 }
 
-.sample1 .sample1BottomLine input:focus+.slider {
-  -webkit-box-shadow: 0 0 1px #2196F3;
-  box-shadow: 0 0 1px #2196F3;
+.sample1 .sample1BottomLine input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #2196f3;
 }
 
-.sample1 .sample1BottomLine input:checked+.slider:before {
+.sample1 .sample1BottomLine input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   transform: translateX(26px);
 }
@@ -715,5 +715,4 @@ footer .socialsBlock img {
   transition: opacity 0.3s;
   opacity: 0;
 }
-
 /*# sourceMappingURL=input.css.map */
